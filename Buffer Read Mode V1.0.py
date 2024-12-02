@@ -338,6 +338,10 @@ def main():
             if Status != "0x92":
                 s.sendall(GetCommand("ClearB"))
                 time.sleep(0.006)
+            
+            if Status != "0x94":
+                s.sendall(GetCommand("ClearB"))
+                time.sleep(0.006)
             time.sleep(1)
             s.close()
 
